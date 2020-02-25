@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "en_articles",
   "info": {
     "name": "EnArticle"
   },
@@ -10,7 +12,5 @@
     "Name": {
       "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "en_articles"
+  }
 }

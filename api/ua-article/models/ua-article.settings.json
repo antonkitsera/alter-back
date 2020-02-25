@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "ua_articles",
   "info": {
     "name": "UaArticle"
   },
@@ -8,9 +10,26 @@
   },
   "attributes": {
     "Name": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "ua_category": {
+      "model": "ua-category",
+      "via": "ua_articles"
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
     }
-  },
-  "connection": "default",
-  "collectionName": "ua_articles"
+  }
 }

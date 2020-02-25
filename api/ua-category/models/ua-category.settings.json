@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "ua_categories",
   "info": {
     "name": "UaCategory"
   },
@@ -8,9 +10,13 @@
   },
   "attributes": {
     "Name": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ua_articles": {
+      "via": "ua_category",
+      "collection": "ua-article"
     }
-  },
-  "connection": "default",
-  "collectionName": "ua_categories"
+  }
 }
