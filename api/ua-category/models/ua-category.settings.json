@@ -15,8 +15,8 @@
       "unique": true
     },
     "ua_articles": {
-      "via": "ua_category",
-      "collection": "ua-article"
+      "collection": "ua-article",
+      "via": "ua_category"
     }
   }
 }

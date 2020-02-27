@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "en_categories",
   "info": {
     "name": "EnCategory"
   },
@@ -9,8 +11,10 @@
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "en_articles": {
+      "collection": "en-article",
+      "via": "en_category"
     }
-  },
-  "connection": "default",
-  "collectionName": "en_categories"
+  }
 }

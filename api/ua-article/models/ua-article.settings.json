@@ -13,10 +13,6 @@
       "type": "string",
       "required": true
     },
-    "ua_category": {
-      "model": "ua-category",
-      "via": "ua_articles"
-    },
     "Text": {
       "type": "richtext",
       "required": true
@@ -30,6 +26,10 @@
       "via": "related",
       "plugin": "upload",
       "required": true
+    },
+    "ua_category": {
+      "via": "ua_articles",
+      "model": "ua-category"
     }
   }
 }
